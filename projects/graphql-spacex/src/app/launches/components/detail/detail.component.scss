@@ -1,0 +1,22 @@
+:host {
+  mat-card {
+    img {
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+  }
+  .photo-grid {
+    padding-top: 30px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 300px));
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
